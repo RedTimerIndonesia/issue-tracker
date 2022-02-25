@@ -1,0 +1,44 @@
+
+name: Feature Request
+description: Form Request penambahan fitur baru di Red Timer Indonesia
+title: "[Feature Request] "
+labels: ["enhancement"]
+assignees: 
+  - Azharhrj
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Request feature yang kamu inginkan disini, pastikan fitur tersebut tidak untuk kepentingan diri sendiri.
+  - type: input
+    id: nama-ucp
+    attributes:
+      label: Nama UCP
+      description: Tulis nama UCP kamu
+      placeholder: 'Contoh: AzharHrj'
+    validations:
+      required: true
+  - type: textarea
+    id: nama-fitur
+    attributes:
+      label: Fitur yang di inginkan
+      description: Jelaskan secara rinci tentang fitur apa yang ingin ditambahkan kedalam server Red Timer Indonesia
+      placeholder: "Contoh: Tambahkan fitur payday agar bisa [...]"
+    validations:
+      required: true
+  - type: textarea
+    id: alasan-fitur
+    attributes:
+      label: Kenapa fitur tersebut harus di tambahkan?
+      description: Jelaskan secara rinci kenapa harus ada fitur tersebut ditambahkan kedalam server Red Timer Indonesia
+      placeholder: "Contoh: Karena fitur ini bisa membuat [...]"
+    validations:
+      required: true
+  - type: textarea
+    id: more-info
+    attributes:
+      label: Info tambahan
+      description: Informasi tambahan tentang fitur yang kamu inginkan
+    validations:
+      required: false

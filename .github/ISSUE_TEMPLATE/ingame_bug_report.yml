@@ -1,0 +1,68 @@
+name: In-game Bug Report
+description: Melaporkan bug yang ada di server Red Timer Indonesia
+title: "[In-game Bug Report] "
+labels: ["ingame", "bug"]
+assignees: 
+  - Azharhrj
+
+body:
+  - type: markdown
+    attributes: 
+      value: |
+        Pelaporan bug diharuskan sedetail mungkin, agar developer tidak kesulitan saat mereproduksinya.
+  - type: input
+    id: nama-ucp
+    attributes:
+      label: Nama UCP
+      description: Tulis nama UCP kamu
+      placeholder: 'Contoh: AzharHrj'
+    validations:
+      required: true
+  - type: textarea
+    id: deskripsi-bug
+    attributes:
+      label: Deskripsi Bug
+      description: Jelaskan secara rinci bug apa yang kamu temukan di server Red Timer Indonesia
+      placeholder: 'Contoh: Terdapat obyek yang melayang di area Palomino Creek'
+    validations:
+      required: true
+  - type: textarea
+    id: bug-reproduce
+    attributes:
+      label: Langkah reproduksi bug
+      description: Jelaskan langkah-langkah bagaimana bug tersebut bisa terjadi
+      placeholder: |
+        *Contoh melaporkan langkah untuk mereproduksi bug yang kamu alami*:
+        1. Pergi ke '...'
+        2. Ketik '...'
+        3. Naik kendaraan '...'
+    validations:
+      required: true
+  - type: textarea
+    id: bug-proof
+    attributes:
+      label: Barang bukti
+      description: Jika ada, kirimkan barang bukti di bawah. Barang bukti bisa berupa screenshot/video
+      placeholder: |
+        Chatlog:
+        ```
+        [00:00:01] Andreas_Leonardo says: azhar pepek
+        [00:16:10] Server closed the connection
+        ```
+        
+        Video:
+        https://youtube.com or equivalent
+        
+        Screnshot:
+        https://imgur.com or equivalent
+    validations:
+      required: false
+  - type: textarea
+    id: more-info
+    attributes:
+      label: Info tambahan
+      description: Informasi tambahan yang relevan tentang bug yang kamu alami
+      placeholder: 'Contoh: seharusnya bug ini tidak terjadi pada versi sebelumnya.'
+    validations:
+      required: false
+ 

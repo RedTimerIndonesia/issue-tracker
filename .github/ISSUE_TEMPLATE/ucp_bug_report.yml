@@ -1,0 +1,61 @@
+name: UCP Bug Report
+description: Melaporkan bug yang ada di UCP Red Timer Indonesia
+title: "[UCP Bug Report] "
+labels: ["ucp", "bug"]
+assignees: 
+  - GNZTMPZ
+
+body:
+  - type: markdown
+    attributes: 
+      value: |
+        Pelaporan bug diharuskan sedetail mungkin, agar developer tidak kesulitan saat mereproduksinya.
+  - type: input
+    id: nama-ucp
+    attributes:
+      label: Nama UCP
+      description: Tulis nama UCP kamu
+      placeholder: 'Contoh: AzharHrj'
+    validations:
+      required: true
+  - type: textarea
+    id: deskripsi-bug
+    attributes:
+      label: Deskripsi Bug
+      description: Jelaskan secara rinci bug apa yang kamu temukan di UCP Red Timer Indonesia
+      placeholder: 'Contoh: Gambar Skin di UCP tidak terlihat'
+    validations:
+      required: true
+  - type: textarea
+    id: bug-reproduce
+    attributes:
+      label: Langkah reproduksi bug
+      description: Jelaskan langkah-langkah bagaimana bug tersebut bisa terjadi
+      placeholder: |
+        *Contoh melaporkan langkah untuk mereproduksi bug yang kamu alami*:
+        1. Pergi ke URL '...'
+        2. Ketik '...'
+        3. Klik Tombol '...'
+    validations:
+      required: true
+  - type: textarea
+    id: bug-proof
+    attributes:
+      label: Barang bukti
+      description: Jika ada, kirimkan barang bukti di bawah. Barang bukti bisa berupa screenshot/video
+      placeholder: |
+        Video:
+        https://youtube.com or equivalent
+        
+        Screnshot:
+        https://imgur.com or equivalent
+    validations:
+      required: false
+  - type: textarea
+    id: more-info
+    attributes:
+      label: Info tambahan
+      description: Informasi tambahan yang relevan tentang bug yang kamu alami
+      placeholder: 'Contoh: seharusnya bug ini tidak terjadi pada versi sebelumnya.'
+    validations:
+      required: false
